@@ -1,223 +1,775 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Third Party Information Sharing List - Xiaohongshu</title>
+  <title>第三方信息共享清单</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      max-width: 960px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 48px 24px 80px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.8;
+      padding: 48px 20px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      font-size: 13px;
+      line-height: 1.7;
       color: #333;
       background: #fff;
     }
     .back { font-size: 13px; margin-bottom: 32px; }
     .back a { color: #ff2442; text-decoration: none; }
     .back a:hover { text-decoration: underline; }
-    h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; color: #111; }
-    .update-date { font-size: 13px; color: #888; margin-bottom: 36px; }
-    h2 { font-size: 18px; font-weight: 600; margin-top: 40px; margin-bottom: 16px; color: #111; }
-    p { margin-bottom: 14px; }
-    a { color: #ff2442; text-decoration: none; }
+    h1 { font-size: 22px; font-weight: 700; text-align: center; margin-bottom: 40px; color: #111; }
+    h2 { font-size: 16px; font-weight: 700; margin-top: 48px; margin-bottom: 16px; color: #111; border-left: 3px solid #ff2442; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 12px; }
+    th { background: #f5f5f5; font-weight: 600; padding: 8px 10px; border: 1px solid #ddd; text-align: center; vertical-align: middle; }
+    td { padding: 7px 10px; border: 1px solid #ddd; vertical-align: top; }
+    td.center { text-align: center; }
+    tr.section-header td { background: #fafafa; text-align: center; font-weight: 600; color: #555; }
+    a { color: #3d8af5; text-decoration: none; word-break: break-all; }
     a:hover { text-decoration: underline; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 32px; font-size: 13px; }
-    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
-    th { background: #f7f7f7; font-weight: 600; white-space: nowrap; }
-    tr:nth-child(even) td { background: #fafafa; }
   </style>
 </head>
 <body>
 
-<p class="back"><a href="./index.html">← Back to Xiaohongshu Privacy Policy</a></p>
+<p class="back"><a href="./index-zh.html">← 返回小红书用户隐私政策</a></p>
 
-<h1>Third Party Information Sharing List</h1>
-<p class="update-date">Last Updated: April 27, 2026</p>
+<h1>第三方信息共享清单</h1>
 
-<p>This list details the third-party SDK service providers and business partners with whom the Xiaohongshu Platform shares user personal information, the information shared, and the purposes for sharing, in accordance with the <a href="./index.html">Xiaohongshu User Privacy Policy</a>. We continuously review and update this list to reflect changes in our third-party partnerships.</p>
-
-<h2>I. Third-Party SDK Service Providers</h2>
+<h2>一、接入SDK名单</h2>
 
 <table>
   <thead>
     <tr>
-      <th>SDK / Service Name</th>
-      <th>Provider</th>
-      <th>Purpose</th>
-      <th>Information Collected</th>
-      <th>Privacy Policy</th>
+      <th style="width:12%">第三方公司名称</th>
+      <th style="width:11%">产品/类型</th>
+      <th style="width:26%">共享信息名称</th>
+      <th style="width:10%">使用目的</th>
+      <th style="width:13%">使用场景</th>
+      <th style="width:8%">共享方式</th>
+      <th style="width:20%">第三方个人信息处理规则</th>
     </tr>
   </thead>
   <tbody>
+    <tr class="section-header"><td colspan="7">推送服务</td></tr>
     <tr>
-      <td>One-Click Login SDK</td>
-      <td>China Mobile / China Unicom / China Telecom (via authorized partners)</td>
-      <td>Provide one-click login via phone number verification</td>
-      <td>Device information, network information, mobile phone number, operator information, geolocation</td>
-      <td>Subject to respective operator's privacy policy</td>
+      <td>华为终端有限公司</td>
+      <td>华为</td>
+      <td>设备信息【包括：设备型号、设备名称、SIM卡序列号、设备唯一标识符（IMEI、IMSI、Android ID、IDFA、OAID(Harmony OS)）】、网络信息</td>
+      <td>推送消息</td>
+      <td>用于华为手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://consumer.huawei.com/cn/privacy/privacy-policy/">https://consumer.huawei.com/cn/privacy/privacy-policy/</a></td>
     </tr>
     <tr>
-      <td>WeChat Open Platform SDK</td>
-      <td>Tencent (Shenzhen Tencent Computer Systems Co., Ltd.)</td>
-      <td>Third-party account login via WeChat; WeChat payment</td>
-      <td>Device information, network information, WeChat OpenID, nickname, avatar, geolocation</td>
-      <td><a href="https://weixin.qq.com/cgi-bin/readtemplate?t=weixin_agreement&s=privacy" target="_blank">WeChat Privacy Policy</a></td>
+      <td>荣耀终端有限公司</td>
+      <td>荣耀</td>
+      <td>设备信息、网络信息</td>
+      <td>推送信息</td>
+      <td>用于荣耀手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.hihonor.com/cn/privacy/">https://www.hihonor.com/cn/privacy/</a></td>
     </tr>
     <tr>
-      <td>Weibo SDK</td>
-      <td>Weibo Corporation (Beijing Weibo Internet Technology Co., Ltd.)</td>
-      <td>Third-party account login via Weibo; friend recommendations</td>
-      <td>Device information, network information, Weibo UID, nickname, avatar, friend list</td>
-      <td><a href="https://weibo.com/signup/v5/privacy" target="_blank">Weibo Privacy Policy</a></td>
+      <td>广东欧珀移动通信有限公司</td>
+      <td>OPPO PUSH客户端SDK</td>
+      <td>网络信息</td>
+      <td>推送消息</td>
+      <td>用于oppo手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228">https://open.oppomobile.com/new/developmentDoc/info?id=11228</a></td>
     </tr>
     <tr>
-      <td>Alipay SDK</td>
-      <td>Ant Group (Zhejiang Ant Small and Micro Financial Services Group Co., Ltd.)</td>
-      <td>Payment processing via Alipay</td>
-      <td>Device information, network information, Alipay account information, transaction information</td>
-      <td><a href="https://render.alipay.com/p/f/fd-jwq5opbf/index.html" target="_blank">Alipay Privacy Policy</a></td>
+      <td>维沃移动通信有限公司</td>
+      <td>VIVO</td>
+      <td>网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>推送信息</td>
+      <td>用于vivo手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.vivo.com.cn/about-vivo/privacy-policy">https://www.vivo.com.cn/about-vivo/privacy-policy</a></td>
     </tr>
     <tr>
-      <td>UnionPay SDK</td>
-      <td>China UnionPay Co., Ltd.</td>
-      <td>Payment processing via UnionPay</td>
-      <td>Device information, network information, card information (encrypted), transaction information</td>
-      <td>Subject to UnionPay's privacy policy</td>
+      <td>小米移动软件有限公司</td>
+      <td>小米</td>
+      <td>设备信息【包括：设备型号、设备名称、SIM卡序列号、设备唯一标识符（IMEI、IMSI、Android ID、IDFA、OAID）】、地理位置、网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>推送消息</td>
+      <td>用于小米手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://dev.mi.com/console/doc/detail?pId=1822">https://dev.mi.com/console/doc/detail?pId=1822</a></td>
     </tr>
     <tr>
-      <td>Xiaomi Push / OPPO Push / Huawei Push / VIVO Push / APNs (Apple)</td>
-      <td>Xiaomi / OPPO / Huawei / VIVO / Apple</td>
-      <td>Message push notifications</td>
-      <td>Push SDK version number, device information, mobile phone status, geolocation, network information, storage information</td>
-      <td>Subject to respective manufacturer's privacy policy</td>
+      <td>珠海市魅族通讯设备有限公司</td>
+      <td>魅族推送SDK</td>
+      <td>设备信息、网络设备硬件地址、网络信息、地理位置、读取存储（相册、媒体和其他文件）权限</td>
+      <td>推送消息</td>
+      <td>用于魅族手机的消息推送</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.meizu.com/legal.html">https://www.meizu.com/legal.html</a></td>
     </tr>
     <tr>
-      <td>Amap (AutoNavi) Location SDK</td>
-      <td>Alibaba Group (AutoNavi Software Co., Ltd.)</td>
-      <td>Location-based services (content recommendation, publishing, delivery address editing)</td>
-      <td>Device information, geolocation information</td>
-      <td><a href="https://lbs.amap.com/pages/privacy/" target="_blank">Amap Privacy Policy</a></td>
+      <td>深圳市和讯华谷信息技术有限公司</td>
+      <td>极光</td>
+      <td>设备信息【包括：设备型号、设备名称、SIM卡序列号、设备唯一标识符（IMEI、IMSI、Android ID、IDFA、OAID、GAID）】、网络信息、地理位置、读取存储（相册、媒体和其他文件）权限、设备已安装应用列表</td>
+      <td>推送消息</td>
+      <td>通过极光发送各个移动平台的系统通知</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.jiguang.cn/license/privacy">https://www.jiguang.cn/license/privacy</a></td>
     </tr>
     <tr>
-      <td>Tencent Cloud Storage SDK</td>
-      <td>Tencent Cloud (Tencent Cloud Computing (Beijing) Co., Ltd.)</td>
-      <td>Cloud storage of user-uploaded images, audio, and video content</td>
-      <td>Device information, network information, operator information</td>
-      <td><a href="https://cloud.tencent.com/document/product/301/11470" target="_blank">Tencent Cloud Privacy Policy</a></td>
+      <td>每日互动股份有限公司</td>
+      <td>个推</td>
+      <td>设备信息（包括设备型号、设备名称、操作系统版本、Android ID、IMEI、OAID设备标识符）、网络设备硬件地址（MAC地址）、网络信息（包括IP地址、WLAN接入点SSID/BSSID、运营商名称、网络质量数据）、蓝牙状态信息（蓝牙地址）、存储权限（用于读取/写入相册、媒体和其他文件）、悬浮窗权限</td>
+      <td>推送消息</td>
+      <td>为客户端推送消息，如APP公告、更新升级推送场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://docs.getui.com/privacy/">https://docs.getui.com/privacy/</a></td>
     </tr>
     <tr>
-      <td>Alibaba Cloud Storage SDK</td>
-      <td>Alibaba Cloud (Alibaba Cloud Computing Co., Ltd.)</td>
-      <td>Cloud storage of user-uploaded content</td>
-      <td>Device information, network information, operator information</td>
-      <td><a href="https://terms.aliyun.com/legal-agreement/terms/privacy-policy.html" target="_blank">Alibaba Cloud Privacy Policy</a></td>
+      <td>友盟同欣（北京）科技有限公司、北京锐讯灵通科技有限公司</td>
+      <td>友盟</td>
+      <td>设备信息、网络信息、地理位置、读取存储（相册、媒体和其他文件）权限</td>
+      <td>推送消息</td>
+      <td>通过友盟发送各个移动平台的系统通知</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.umeng.com/page/policy">https://www.umeng.com/page/policy</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">登录服务</td></tr>
+    <tr>
+      <td>中移互联网有限公司</td>
+      <td>移动一键实名登录、账号找回/换绑</td>
+      <td>设备信息、网络设备硬件地址、网络信息、麦克风（录音）、相机（摄像头）</td>
+      <td>一键登录</td>
+      <td>一键登录、一键实名登录</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://rzzm.h5cmpassport.com/mall-oms-ui/protocol/">https://rzzm.h5cmpassport.com/mall-oms-ui/protocol/</a></td>
     </tr>
     <tr>
-      <td>Tencent Security SDK (TPNS / Anti-cheating)</td>
-      <td>Tencent (Shenzhen Tencent Computer Systems Co., Ltd.)</td>
-      <td>Account security, risk control, anti-fraud verification</td>
-      <td>Device information, network information, operator information, log information, storage information</td>
-      <td><a href="https://privacy.qq.com/" target="_blank">Tencent Privacy Policy</a></td>
+      <td>中国电信股份有限公司及其关联企业</td>
+      <td>电信</td>
+      <td>网络信息、读取手机状态</td>
+      <td>一键登录</td>
+      <td>一键登录</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://e.189.cn/legalStatement.jsp">https://e.189.cn/legalStatement.jsp</a></td>
     </tr>
     <tr>
-      <td>NetEase Yidun SDK</td>
-      <td>NetEase (Hangzhou NetEase Information Technology Co., Ltd.)</td>
-      <td>Content security review and spam detection</td>
-      <td>Content text, images, and video submitted for review; device information</td>
-      <td>Subject to NetEase's privacy policy</td>
+      <td>中国联合网络通信集团有限公司及其关联企业</td>
+      <td>联通认证SDK</td>
+      <td>APP包名、IP地址、设备类型、操作系统版本、网络制式、运营商类型</td>
+      <td>一键登录</td>
+      <td>一键登录</td>
+      <td>SDK本机采集</td>
+      <td><a href="http://m.client.10010.com/mobileService/tuwenhunpai/notice_1527478459203.html">http://m.client.10010.com/mobileService/tuwenhunpai/notice_1527478459203.html</a></td>
     </tr>
     <tr>
-      <td>Agora (Shengwang) Live Stream SDK</td>
-      <td>Agora (Beijing Agora Technology Co., Ltd.)</td>
-      <td>Live streaming audio and video transmission</td>
-      <td>Device information, network information, push SDK version number, operator information; audio and video streams during live streaming</td>
-      <td><a href="https://www.agora.io/en/privacy-policy/" target="_blank">Agora Privacy Policy</a></td>
+      <td>上海游昆信息技术有限公司</td>
+      <td>秒验SDK（MobTech）</td>
+      <td>网络运营商、网络信息、手机号码、设备已安装应用列表、设备信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>一键登录</td>
+      <td>一键登录</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.mob.com/about/policy">https://www.mob.com/about/policy</a></td>
     </tr>
     <tr>
-      <td>Face++ / Megvii SDK</td>
-      <td>Megvii Technology (Beijing Kuangshi Technology Co., Ltd.)</td>
-      <td>Skin test and makeup trial functions (facial feature analysis)</td>
-      <td>Camera permission; facial feature data processed locally (not stored)</td>
-      <td>Subject to Megvii's privacy policy</td>
+      <td>深圳荣耀软件技术有限公司或关联公司</td>
+      <td>荣耀账号SDK</td>
+      <td>账号信息、联系方式、应用信息</td>
+      <td>荣耀账号授权登录开放能力</td>
+      <td>使用荣耀账号进行登录</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://developer.honor.com/cn/docs/11001/guides/sdk-privacy-statement">https://developer.honor.com/cn/docs/11001/guides/sdk-privacy-statement</a></td>
     </tr>
     <tr>
-      <td>Baidu Map SDK</td>
-      <td>Baidu (Beijing Baidu Netcom Science and Technology Co., Ltd.)</td>
-      <td>Map display for nearby features and location tagging</td>
-      <td>Device information, geolocation information</td>
-      <td><a href="https://lbs.baidu.com/index.php?title=open/privacy" target="_blank">Baidu Map Privacy Policy</a></td>
+      <td>小米移动软件有限公司</td>
+      <td>小米卸载重装SDK</td>
+      <td>用户ID（userId）、设备登录凭证（device_password）、用户昵称（nickname）、用户头像URL（avatarUrl）</td>
+      <td>卸载重装app后完成自动登录</td>
+      <td>卸载后重装app后，并同意小红书隐私协议后</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://privacy.mi.com/all/zh_CN/">https://privacy.mi.com/all/zh_CN/</a></td>
+    </tr>
+    <tr>
+      <td>广东欧珀移动通信有限公司</td>
+      <td>OPPO keychain SDK</td>
+      <td>用户ID（userId）、设备登录凭证（device_password）、用户昵称（nickname）、用户头像URL（avatarUrl）</td>
+      <td>卸载重装app后完成自动登录</td>
+      <td>卸载后重装app后，并同意小红书隐私协议后</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://privacy.oppo.com/cn/policy/">https://privacy.oppo.com/cn/policy/</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">地图及定位</td></tr>
+    <tr>
+      <td>北京百度网讯科技有限公司</td>
+      <td>百度地图</td>
+      <td>网络信息、地理位置、读取存储（相册、媒体和其他文件）权限、设备传感器信息、设备已安装应用列表</td>
+      <td>用于展现地图</td>
+      <td>用于发布笔记</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://lbsyun.baidu.com/index.php?title=openprivacy">https://lbsyun.baidu.com/index.php?title=openprivacy</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>腾讯地图</td>
+      <td>网络类型、设备型号、手机屏幕密度尺寸、操作系统及版本、IP地址、OAID、AAID、应用当前正在运行的进程名、SD卡文件内容相关信息、手机方向传感器等信息、位置信息、IDFV等信息</td>
+      <td>用户使用地图功能时提供地图展示、位置信息展示等相关功能</td>
+      <td>用于用户信息发布的定位、展现地图和交易订单物流状态</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://privacy.qq.com/document/preview/a10a8634f237464da9a95f4f07e73e40">https://privacy.qq.com/document/preview/a10a8634f237464da9a95f4f07e73e40</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>腾讯定位</td>
+      <td>地理位置（包含在后台状态下收集）、设备信息、网络设备硬件地址、网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>帮助用户发布信息时定位位置</td>
+      <td>用于发布笔记</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://lbs.qq.com/userAgreements/agreements/privacy">https://lbs.qq.com/userAgreements/agreements/privacy</a></td>
+    </tr>
+    <tr>
+      <td>高德软件有限公司</td>
+      <td>高德开放平台地图</td>
+      <td>地理位置信息（经纬度、精确位置、粗略位置）【通过IP地址、GNSS信息、WiFi状态、WiFi参数、WiFi列表、SSID、BSSID、基站信息、信号强度的信息、蓝牙信息、传感器信息、设备信号强度信息获取、外部存储目录】、设备信息（IMEI、IDFA、IDFV、Android ID、MEID、MAC地址、OAID、IMSI、ICCID、硬件序列号）、当前应用信息（应用名、应用版本号）、设备参数及系统信息（系统属性、设备型号、操作系统、运营商信息）</td>
+      <td>用于用户信息发布的定位、展现地图和交易订单物流状态</td>
+      <td>用于用户信息发布的定位、展现地图和交易订单物流状态</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">支付功能</td></tr>
+    <tr>
+      <td>中国银联股份有限公司</td>
+      <td>云闪付</td>
+      <td>安卓：设备信息（终端型号、语言、分辨率、版本、操作系统名、系统版本号）、商户APP包名、国家；iOS：采集信息名称、设备信息（终端语言、分辨率、版本、操作系统名、系统版本号）、时区、联网方式</td>
+      <td>帮助用户在应用内使用云闪付、银行APP</td>
+      <td>使用云闪付、银行APP支付</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://wallet.95516.com/s/wl/WebAPP/helpAgree/page/agreement/regPrivacy.html">https://wallet.95516.com/s/wl/WebAPP/helpAgree/page/agreement/regPrivacy.html</a></td>
+    </tr>
+    <tr>
+      <td>支付宝（中国）网络技术有限公司</td>
+      <td>支付宝</td>
+      <td>设备信息、网络设备硬件地址、网络信息、读取存储（相册、媒体和其他文件）权限、读取手机状态</td>
+      <td>帮助用户在应用内使用支付宝</td>
+      <td>使用支付宝支付</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://opendocs.alipay.com/open/54">https://opendocs.alipay.com/open/54</a></td>
+    </tr>
+    <tr>
+      <td>ALIPAY SINGAPORE E-COMMERCE PRIVATE LIMITED</td>
+      <td>Antom SDK</td>
+      <td>设备信息和网络信息</td>
+      <td>帮助用户在应用内使用Antom服务</td>
+      <td>使用Antom进行信用卡、银行卡支付</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://render.alipay.com/p/f/agreementpages/alipayglobalprivacypolicy.html">https://render.alipay.com/p/f/agreementpages/alipayglobalprivacypolicy.html</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">登录及分享</td></tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>微信开放平台</td>
+      <td>网络信息</td>
+      <td>支持微信授权登录、微信分享和微信支付</td>
+      <td>使用微信授权登录场景，微信分享和支付场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://open.weixin.qq.com/cgi-bin/frame?t=news/protocol_developer_tmpl">https://open.weixin.qq.com/cgi-bin/frame?t=news/protocol_developer_tmpl</a></td>
+    </tr>
+    <tr>
+      <td>腾讯科技（深圳）有限公司</td>
+      <td>QQ开放平台</td>
+      <td>设备信息、网络设备硬件地址、网络信息、地理位置、读取存储（相册、媒体和其他文件）权限</td>
+      <td>支持QQ授权登录，帮助用户分享内容至QQ</td>
+      <td>QQ授权登录场景，分享内容至QQ场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://wiki.connect.qq.com/qq%e4%ba%92%e8%81%94sdk%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4%e5%a3%b0%e6%98%8e">https://wiki.connect.qq.com/qq互联sdk隐私保护声明</a></td>
+    </tr>
+    <tr>
+      <td>北京微梦创科网络技术有限公司</td>
+      <td>微博开放平台</td>
+      <td>设备信息、网络设备硬件地址、网络信息、读取存储（相册、媒体和其他文件）权限、设备已安装应用列表</td>
+      <td>支持微博授权登录，帮助用户分享内容至微博</td>
+      <td>微博授权登录场景，分享至微博场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://open.weibo.com/wiki/Android_SDK%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3">https://open.weibo.com/wiki/Android_SDK说明文档</a></td>
+    </tr>
+    <tr>
+      <td>浙江淘宝网络有限公司、淘宝（中国）软件有限公司</td>
+      <td>阿里百川电商（淘宝）SDK</td>
+      <td>设备信息、读取存储（相册、媒体和其他文件）权限、网络设备硬件地址、网络信息</td>
+      <td>支持跳转到手淘打开商品详情页</td>
+      <td>打开手机淘宝链接跳转场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao202107141244_11649.html">https://terms.alicdn.com/（淘宝隐私协议）</a></td>
+    </tr>
+    <tr>
+      <td>华为终端有限公司</td>
+      <td>华为HMS</td>
+      <td>网络信息、地理位置、读取存储（相册、媒体和其他文件）权限、相机权限</td>
+      <td>支持使用华为畅联功能进行分享</td>
+      <td>使用华为畅联功能分享场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://consumer.huawei.com/cn/privacy/privacy-policy/">https://consumer.huawei.com/cn/privacy/privacy-policy/</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">第三方应用或小程序</td></tr>
+    <tr>
+      <td>北京百度网讯科技有限公司</td>
+      <td>百度小程序</td>
+      <td>安装包信息、共享数据信息、音视频信息、设备信息、网络信息、地理位置、蓝牙状态信息、读取存储（相册、媒体和其他文件）和剪切板权限、读取手机状态</td>
+      <td>支持跳转到百度小程序</td>
+      <td>打开跳转到百度小程序的场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.baidu.com/duty/yinsiquan.html">https://www.baidu.com/duty/yinsiquan.html</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">云服务</td></tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯云</td>
+      <td>音视频信息、地理位置、网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>用于笔记发布、图片/语音类消息上传、Hey发布</td>
+      <td>用于发布笔记、消息上传场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>上海七牛信息技术有限公司</td>
+      <td>七牛云</td>
+      <td>网络信息、地理位置、读取存储（相册、媒体和其他文件）权限</td>
+      <td>用于笔记发布</td>
+      <td>用户发布笔记场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.qiniu.com/privacy-right">https://www.qiniu.com/privacy-right</a></td>
+    </tr>
+    <tr>
+      <td>亚马逊卓越有限公司</td>
+      <td>亚马逊AWS</td>
+      <td>网络信息</td>
+      <td>用于笔记发布</td>
+      <td>用于发布笔记场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://aws.amazon.com/cn/privacy/?nc1=f_pr">https://aws.amazon.com/cn/privacy/?nc1=f_pr</a></td>
+    </tr>
+
+    <tr class="section-header"><td colspan="7">其他功能</td></tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>实名认证服务提供方</td>
+      <td>身份证号、面部识别信息</td>
+      <td>身份认证</td>
+      <td>用户实名认证时</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>腾讯图灵盾人脸防攻击SDK</td>
+      <td>（1）系统设置、系统属性（含传感器列表信息）、网络连接类型、设备型号、操作系统、IP地址、相机（相机参数、接口）；（2）不同系统版本还处理：a.Android端：OAID、部分存储文件路径；b.iOS端：运营商信息、iDFV；c.鸿蒙端：OAID</td>
+      <td>设备风险环境监测、恶意应用监测、ROM劫持攻击等安全监测与防护，用于识别是否为真实设备及真人使用</td>
+      <td>人脸核身过程中人脸防攻击</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://privacy.qq.com/document/preview/b8f92d6cdc0d4dc3ab6192d7096cee68">https://privacy.qq.com/document/preview/b8f92d6cdc0d4dc3ab6192d7096cee68</a></td>
+    </tr>
+    <tr>
+      <td>金联汇通信息技术有限公司</td>
+      <td>实证服务SDK</td>
+      <td>电子护照芯片中存储的密文信息，包括姓名、性别、出生日期、证件号码、英文姓名、有效结束日期、国家或地区代码、机读码、头像照片、其它名称、国籍、个人号码、有效起始日期、签发机关</td>
+      <td>身份认证</td>
+      <td>用户实名认证时</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://eidcloudread.cneid.net.cn/pro/privacypolicy.html">https://eidcloudread.cneid.net.cn/pro/privacypolicy.html</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>腾讯X5</td>
+      <td>设备信息、网络信息、地理位置、读取存储（相册、媒体和其他文件）权限、蓝牙状态信息</td>
+      <td>用于使用腾讯X5浏览器内核</td>
+      <td>用于腾讯QQ浏览器进行移动浏览场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://x5.tencent.com/tbs/policy.html">https://x5.tencent.com/tbs/policy.html</a></td>
+    </tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯DNS</td>
+      <td>设备信息、网络信息</td>
+      <td>使用腾讯灯塔进行业务统计分析</td>
+      <td>用于业务分析场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>北京市商汤科技开发有限公司</td>
+      <td>商汤科技</td>
+      <td>\</td>
+      <td>用于视频特效</td>
+      <td>用于视频编辑特效场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.sensetime.com/cn/personal_clause">https://www.sensetime.com/cn/personal_clause</a></td>
+    </tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯移动直播SDK</td>
+      <td>音视频信息、网络信息、蓝牙状态信息、读取存储（相册、媒体和其他文件）权限、读取手机状态</td>
+      <td>用于直播推拉流</td>
+      <td>用于直播场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯实时音视频TRTC SDK</td>
+      <td>音视频信息、蓝牙状态信息、网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>用于直播即时通讯</td>
+      <td>用于直播时音视频通信场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯即时通讯IM SDK</td>
+      <td>音视频信息、蓝牙状态信息、网络信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>用于直播即时通讯</td>
+      <td>用于直播时IM即时通信场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
+    </tr>
+    <tr>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>腾讯云语音识别SDK</td>
+      <td>音频数据、网络状态、网络访问</td>
+      <td>语音转文字功能</td>
+      <td>用于内容发布场景的语音转文字功能</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.tencent.com/document/product/1093/73072">https://cloud.tencent.com/document/product/1093/73072</a></td>
+    </tr>
+    <tr>
+      <td>深圳乐播科技有限公司</td>
+      <td>乐播投屏SDK</td>
+      <td>生产厂商、设备型号、系统语言、系统版本、网络类型、IP地址、设备传感器信息（横竖屏状态）、设备标识符（Harmony AAID，Android ID）、WiFi名称（SSID）</td>
+      <td>投屏</td>
+      <td>用于实现直播或视频的投屏功能</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://cloud.lebo.cn/document/9bc2299cf3edf5dc.html">https://cloud.lebo.cn/document/9bc2299cf3edf5dc.html</a></td>
+    </tr>
+    <tr>
+      <td>上海兆言网络科技有限公司</td>
+      <td>声网 Agora SDK</td>
+      <td>音视频信息、蓝牙状态信息、网络信息</td>
+      <td>用于直播推拉流、语音通信</td>
+      <td>用于直播时音视频通信场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.agora.io/cn/privacy-policy">https://www.agora.io/cn/privacy-policy</a></td>
+    </tr>
+    <tr>
+      <td>北京数美时代科技有限公司</td>
+      <td>数美SDK</td>
+      <td>必要个人信息：①设备基本信息（设备品牌、制造商、型号、名称、系统类型及版本、基本设置、设备环境）；②设备标识信息（Android ID、OAID、IDFV、IDFA）；③设备网络信息（网络接入形式、周边WIFI列表、运营商信息、网络连接状态）；④设备应用信息（SDK宿主应用包名及版本号、运行中进程信息、传感器信息）。可选个人信息：MAC地址、MediaDRM ID、软件列表、BSSID/SSID及IP地址、粗略及精准位置信息、屏幕分辨率</td>
+      <td>用于风险控制和反欺诈，以保障账户和交易安全</td>
+      <td>用于账户安全场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://www.ishumei.com/legal/cn/privacy.html">https://www.ishumei.com/legal/cn/privacy.html</a></td>
+    </tr>
+    <tr>
+      <td>北京百度网讯科技有限公司</td>
+      <td>百度AR</td>
+      <td>音视频信息、读取存储（相册、媒体和其他文件）权限</td>
+      <td>用于显示增强</td>
+      <td>用于AR显示场景</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://ai.baidu.com/ai-doc/REFERENCE/gkdygodtm">https://ai.baidu.com/ai-doc/REFERENCE/gkdygodtm</a></td>
+    </tr>
+    <tr>
+      <td>移动安全联盟</td>
+      <td>OAID SDK（移动智能终端补充设备标识体系统一调用SDK）</td>
+      <td>设备信息、网络设备硬件地址、网络信息</td>
+      <td>用于提高广告有效触达率、进一步了解用户需求</td>
+      <td>用于广告投放时</td>
+      <td>SDK本机采集</td>
+      <td><a href="http://www.msa-alliance.cn/col.jsp?id=120">http://www.msa-alliance.cn/col.jsp?id=120</a></td>
+    </tr>
+    <tr>
+      <td>北京神奇工场科技有限公司</td>
+      <td>联想实名认证SDK</td>
+      <td>联想账号、设备信息、MAC地址、操作系统和应用程序版本、屏幕分辨率、接入网络的方式、移动网络信息（包括运营商名称）</td>
+      <td>用户在联想生态下的实名认证</td>
+      <td>用于联想生态下的用户实名认证</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://s1.lenovomm.cn/pcstore/html/privacy.html">https://s1.lenovomm.cn/pcstore/html/privacy.html</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>Mars SDK</td>
+      <td>SIM卡 MCC/MNC、Wi-fi BSSID、Wi-fi SSID</td>
+      <td>用于实现网络请求中的长连接</td>
+      <td>用于实现网络请求中的长连接</td>
+      <td>SDK本机读取</td>
+      <td><a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/L60iIjTc9G2A383f">https://support.weixin.qq.com/（Mars SDK隐私政策）</a></td>
+    </tr>
+    <tr>
+      <td>中国移动通信有限公司及其子公司</td>
+      <td>大数据服务</td>
+      <td>加密后的设备号、授权信息、基于上网行为、通信行为、消费信息、加工生成的营销价值评分</td>
+      <td>广告投放、用户研究</td>
+      <td>提供广告投放、统计分析服务时</td>
+      <td>服务端接口传输</td>
+      <td><a href="http://www.10086.cn/web_notice/protocol/">http://www.10086.cn/web_notice/protocol/</a></td>
+    </tr>
+    <tr>
+      <td>中国联合网络通信集团有限公司及其分支机构</td>
+      <td>广告投放和用户研究</td>
+      <td>加密后的设备标识符</td>
+      <td>广告投放、用户研究</td>
+      <td>提供广告投放、统计分析服务时</td>
+      <td>服务端接口传输</td>
+      <td><a href="https://www.10010.com/wt_links/index.html#/privacypolicy">https://www.10010.com/wt_links/index.html#/privacypolicy</a></td>
+    </tr>
+    <tr>
+      <td>中国电信集团有限公司及其分支机构</td>
+      <td>广告投放和用户研究</td>
+      <td>加密后的设备标识符</td>
+      <td>广告投放、用户研究</td>
+      <td>提供广告投放、统计分析服务时</td>
+      <td>服务端接口传输</td>
+      <td><a href="https://www.189.cn/bj/sy_yw/sy_yw_gwzn/101963.html">https://www.189.cn/bj/sy_yw/sy_yw_gwzn/101963.html</a></td>
+    </tr>
+    <tr>
+      <td>上海同芯硕网络科技有限公司</td>
+      <td>广告投放和用户研究</td>
+      <td>加密后的设备标识符</td>
+      <td>广告投放、用户研究</td>
+      <td>提供广告投放、统计分析服务时</td>
+      <td>服务端接口传输</td>
+      <td><a href="https://txstech.com/#/privacy">https://txstech.com/#/privacy</a></td>
+    </tr>
+    <tr>
+      <td>Google LLC</td>
+      <td>广告归因SDK</td>
+      <td>应用程序ID、时间戳、IP地址（仅限非中国大陆用户）</td>
+      <td>装机类广告归因</td>
+      <td>仅用于非中国大陆用户的下载装机类广告归因</td>
+      <td>SDK本机读取</td>
+      <td><a href="https://firebase.google.cn/support/privacy?hl=zh-cn">https://firebase.google.cn/support/privacy?hl=zh-cn</a></td>
+    </tr>
+    <tr>
+      <td>开源SDK</td>
+      <td>OKhttp</td>
+      <td>Android ID、SIM卡 MCC/MNC</td>
+      <td>网络请求时</td>
+      <td>开发工具</td>
+      <td>SDK本机读取</td>
+      <td><a href="https://square.github.io/okhttp">https://square.github.io/okhttp</a></td>
+    </tr>
+    <tr>
+      <td>开源SDK</td>
+      <td>getsentry sentry-java</td>
+      <td>IP地址</td>
+      <td>网络请求时</td>
+      <td>开发工具</td>
+      <td>SDK本机读取</td>
+      <td><a href="https://github.com/getsentry/sentry-java">https://github.com/getsentry/sentry-java</a></td>
+    </tr>
+    <tr>
+      <td>华为软件技术有限公司</td>
+      <td>华为统一扫码SDK</td>
+      <td>网络信息、应用信息（应用基本信息、应用内设备标识符）、设备信息（设备的硬件信息）、运营商信息（运营商的名称）、系统信息（系统设置、系统属性、设备型号、操作系统）和Wi-Fi信息（Wi-Fi状态）</td>
+      <td>二维码和条形码的扫描和识别</td>
+      <td>扫码识别</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/sdk-data-security-0000001050043971">https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/sdk-data-security-0000001050043971</a></td>
+    </tr>
+    <tr>
+      <td>华为软件技术有限公司</td>
+      <td>华为运动健康服务SDK</td>
+      <td>获得用户单独同意后，收集活动数据（包括步数、热量、距离、海拔、中高强度、活动小时数、日常活动数据、活动目标）、锻炼记录（包括运动品类、锻炼记录详情数据、锻炼记录位置详情数据）</td>
+      <td>为用户生成运动贴纸</td>
+      <td>用户生成运动贴纸</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/sdk-privacy-instructions-0000001659248818">https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/sdk-privacy-instructions-0000001659248818</a></td>
+    </tr>
+    <tr>
+      <td>深圳市腾讯计算机系统有限公司</td>
+      <td>Rightly合规管控SDK</td>
+      <td>设备型号、版本号</td>
+      <td>识别和拦截未知、可疑或违规行为</td>
+      <td>合规管控</td>
+      <td>SDK本机采集</td>
+      <td><a href="https://privacy.qq.com/document/preview/3e50cffe23504663b8f9cd5e477e1e1d">https://privacy.qq.com/document/preview/3e50cffe23504663b8f9cd5e477e1e1d</a></td>
     </tr>
   </tbody>
 </table>
 
-<h2>II. Business Partners (Information Sharing for Service Delivery)</h2>
+<h2>二、第三方合作商名单</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Partner Type</th>
-      <th>Purpose</th>
-      <th>Information Shared</th>
-      <th>Sharing Condition</th>
+      <th style="width:20%">第三方公司名称</th>
+      <th style="width:10%">产品/类型</th>
+      <th style="width:18%">共享信息名称</th>
+      <th style="width:9%">使用目的</th>
+      <th style="width:10%">使用场景</th>
+      <th style="width:9%">共享方式</th>
+      <th style="width:24%">第三方个人信息处理规则</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Third-party merchants on the Xiaohongshu Platform</td>
-      <td>Order fulfillment, after-sales service, membership programs</td>
-      <td>Order information, transaction details, user ID, nickname, birthday, mobile phone number (with user authorization for membership)</td>
-      <td>Necessary for transaction; user authorization for membership</td>
+      <td>上海秒针网络科技有限公司、北京国双科技有限公司、尼洱市场研究（上海）有限公司、北京腾云天下科技有限公司、上海腾徽软件科技有限公司、加和（北京）信息科技有限公司、杭州阿里妈妈软件服务有限公司</td>
+      <td>广告监测公司</td>
+      <td>IMEI、IDFA、Android ID、OAID</td>
+      <td>提高广告有效触达率、进一步了解用户需求</td>
+      <td>广告投放时</td>
+      <td>后台接口传输</td>
+      <td>
+        <a href="https://www.miaozhen.com/cn/privacy">https://www.miaozhen.com/cn/privacy</a><br>
+        <a href="https://gridsum.com/policy.html">https://gridsum.com/policy.html</a><br>
+        <a href="https://www.in-neo.com/privacy.html">https://www.in-neo.com/privacy.html</a><br>
+        <a href="https://www.talkingdata.com/privacy.jsp?languagetype=zh_cn">https://www.talkingdata.com/privacy.jsp</a><br>
+        <a href="https://rtbasia.com/privacy/">https://rtbasia.com/privacy/</a><br>
+        <a href="https://addnewer.com/#/pc/privacypolicy">https://addnewer.com/#/pc/privacypolicy</a><br>
+        <a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_ali_mama_division/suit_bu1_ali_mama_division201709111812_13128.html">https://terms.alicdn.com/（阿里妈妈隐私协议）</a>
+      </td>
     </tr>
     <tr>
-      <td>Logistics and courier companies</td>
-      <td>Delivery of purchased goods</td>
-      <td>Recipient name, shipping address, contact phone number, order number</td>
-      <td>Necessary for delivery upon order placement</td>
+      <td>上海顺衡物流有限公司、上海大誉国际物流有限公司、上海云韵快递有限公司、圆通速递有限公司、广州中远海运电商供应链管理有限公司、香港易客满国际物流有限公司</td>
+      <td>物流供应商</td>
+      <td>收货人姓名、联系电话、所在地区、详细地址</td>
+      <td>商城购物发货</td>
+      <td>向用户寄送商品时</td>
+      <td>后台接口传输</td>
+      <td>
+        <a href="https://www.sf-express.com/chn/sc/privacy">https://www.sf-express.com/chn/sc/privacy</a><br>
+        <a href="https://www.zto.com/legal&privacy/privacy.html">https://www.zto.com/legal&amp;privacy/privacy.html</a><br>
+        <a href="http://www.yundaex.com/cn/privacyPolicy.php">http://www.yundaex.com/cn/privacyPolicy.php</a><br>
+        <a href="http://www.yto.net.cn/privacyPolicy.html/">http://www.yto.net.cn/privacyPolicy.html/</a><br>
+        <a href="http://www.cosco-logistics.com.cn/col/col1088/index.html">http://www.cosco-logistics.com.cn/col/col1088/index.html</a><br>
+        <a href="https://www.ecmsglobal.com/resources/en-us/ECMS%20US%20Privacy%20Policy%20v1.pdf">https://www.ecmsglobal.com/（ECMS隐私政策）</a>
+      </td>
     </tr>
     <tr>
-      <td>Real-name authentication review providers</td>
-      <td>Identity verification for authentication and account retrieval</td>
-      <td>Real name, ID number, ID photos, facial recognition results</td>
-      <td>User-initiated authentication or account retrieval request</td>
+      <td>上海威盛报关有限公司、广东高捷航运物流有限公司、宁波栎鑫供应链管理有限公司、宁波海淘通国际物流有限公司、浙江启函供应链管理有限公司、深圳熠思供应链管理有限公司、FINEEX INTERNATIONAL LIMITED</td>
+      <td>报关供应商</td>
+      <td><strong>真实姓名、身份证件号码以及身份证件正反面照片</strong></td>
+      <td>跨境交易</td>
+      <td>进行海关申报、清关</td>
+      <td>后台接口传输</td>
+      <td>\</td>
     </tr>
     <tr>
-      <td>Advertising and analytics partners</td>
-      <td>Ad delivery optimization; user behavior analysis</td>
-      <td>De-identified device information, network information, ad interaction data (click, browse, display, conversion); aggregated statistical data only</td>
-      <td>De-identified and aggregated data only; no personally identifiable information</td>
+      <td>腾讯云计算（北京）有限责任公司、上海飓金嵘通网络科技有限公司</td>
+      <td>身份校验供应商</td>
+      <td><strong>真实姓名、身份证件号码以及身份证件正反面照片</strong></td>
+      <td>跨境交易</td>
+      <td>跨境商品清关（校验身份信息的准确性）</td>
+      <td>后台接口传输</td>
+      <td>
+        <a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a><br>
+        <a href="http://www.91eid.com/">http://www.91eid.com/</a>
+      </td>
     </tr>
     <tr>
-      <td>Content review service providers</td>
-      <td>Ensuring safety and compliance of user-generated content</td>
-      <td>Content published by users (text, images, video)</td>
-      <td>Required for platform content safety obligations</td>
+      <td>通标标准技术服务有限公司苏州分公司、企晟互联网信息服务（上海）有限公司大连分公司</td>
+      <td>资质审核供应商</td>
+      <td>店铺运营人姓名、身份证号码、身份证件正反面照片</td>
+      <td>认证资质</td>
+      <td>商家入驻时进行实名认证/资质审核</td>
+      <td>后台接口传输</td>
+      <td>\</td>
     </tr>
     <tr>
-      <td>Digital collections technology providers</td>
-      <td>Enabling the digital collections (NFT) function</td>
-      <td>User personal information related to the digital collections function as provided to the platform</td>
-      <td>User activation of digital collections function</td>
+      <td>腾讯云计算（北京）有限责任公司</td>
+      <td>数字藏品技术服务提供方</td>
+      <td><strong>真实姓名、身份证件号码、手机号码</strong></td>
+      <td>数字藏品功能</td>
+      <td>用户开通数字藏品功能时</td>
+      <td>后台接口传输</td>
+      <td><a href="https://cloud.tencent.com/document/product/301/11470">https://cloud.tencent.com/document/product/301/11470</a></td>
     </tr>
     <tr>
-      <td>Customer service system providers</td>
-      <td>Storing and managing customer service call records and communications</td>
-      <td>Call recordings, order information, account information (access restricted by contract)</td>
-      <td>Required for customer service delivery; contractually restricted access</td>
+      <td>杭州有赞科技有限公司</td>
+      <td>自研小程序第三方平台开发者</td>
+      <td>手机号、小红书用户名</td>
+      <td>跳转小程序</td>
+      <td>用户从小红书app笔记商品标签、直播间进入小程序时</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.youzan.com/intro/rule/detail?alias=132atyi19&pageType=rules">https://www.youzan.com/intro/rule/detail?alias=132atyi19&amp;pageType=rules</a></td>
     </tr>
     <tr>
-      <td>Customs authorities (cross-border e-commerce)</td>
-      <td>Customs declaration and clearance for cross-border orders</td>
-      <td>Full name, identity document type and number, ID photos, declared value of goods</td>
-      <td>Legal obligation for cross-border transactions</td>
+      <td>中移互联网有限公司</td>
+      <td>二次放号情况查询服务方</td>
+      <td>用户注册、登录时使用的手机号，以及该手机号的注册、登录时间</td>
+      <td>二次放号号码校验</td>
+      <td>注册、登录</td>
+      <td>后台接口传输</td>
+      <td><a href="http://dev.10086.cn/">http://dev.10086.cn/</a></td>
+    </tr>
+    <tr>
+      <td>上海生动诗章科技有限公司</td>
+      <td>点点</td>
+      <td>小红书平台公开发布的笔记</td>
+      <td>搜索、问答</td>
+      <td>用户在点点提问或者搜索</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.askdiandian.com/protocol?protocolName=privacy">https://www.askdiandian.com/protocol?protocolName=privacy</a></td>
+    </tr>
+    <tr>
+      <td>浙江驿栈网络科技有限公司、杭州溪鸟物流科技有限公司</td>
+      <td>物流服务提供方</td>
+      <td>收件人姓名、手机号</td>
+      <td>向用户发送通知</td>
+      <td>菜鸟驿站入库时获取手机号</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.cainiao.com/cn-privacypolicy.html">https://www.cainiao.com/cn-privacypolicy.html</a></td>
+    </tr>
+    <tr>
+      <td>浙江驿栈网络科技有限公司</td>
+      <td>物流服务提供方</td>
+      <td>收件人姓名、手机号、所在地区，地址，邮寄货物信息</td>
+      <td>购物退货</td>
+      <td>菜鸟驿站寄件</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.cainiao.com/cn-privacypolicy.html">https://www.cainiao.com/cn-privacypolicy.html</a></td>
+    </tr>
+    <tr>
+      <td>Cainiao Supply Chain Hong Kong Co., Limited</td>
+      <td>跨境物流服务提供方</td>
+      <td>收件人真实姓名、联系电话、邮箱、地址、邮编</td>
+      <td>跨境物流运输</td>
+      <td>用户购买跨境电商商品时</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.cainiao.com/cn-privacypolicy.html">https://www.cainiao.com/cn-privacypolicy.html</a></td>
+    </tr>
+    <tr>
+      <td>财付通支付科技有限公司</td>
+      <td>跨境电商额度核验服务提供方</td>
+      <td>真实姓名、身份证号码</td>
+      <td>额度核验</td>
+      <td>用户购买跨境电商商品/服务时</td>
+      <td>后台接口传输</td>
+      <td><a href="https://pay.wechatpay.cn/xdc/weardeviceagreementweb/html/agreement/tenpay_user_privacy">https://pay.wechatpay.cn/（财付通隐私政策）</a></td>
+    </tr>
+    <tr>
+      <td>杭州菜鸟供应链管理有限公司</td>
+      <td>跨境电商额度核验服务提供方</td>
+      <td>真实姓名、身份证号码</td>
+      <td>额度核验</td>
+      <td>用户购买跨境电商商品/服务时</td>
+      <td>后台接口传输</td>
+      <td><a href="https://www.cainiao.com/cn-privacypolicy.html">https://www.cainiao.com/cn-privacypolicy.html</a></td>
+    </tr>
+    <tr>
+      <td>丰巢网络技术有限公司</td>
+      <td>物流服务提供方</td>
+      <td>收货人姓名、手机号</td>
+      <td>向用户发送通知</td>
+      <td>丰巢快递柜入库时获取手机号，给用户发取件码</td>
+      <td>后台接口传输</td>
+      <td><a href="https://edms.fcbox.com/staticResource/wechat/play.html?script=op-commonPage-play&code=ZHJ2ZRZQRQ3GA81SXKBT8K2F34">https://edms.fcbox.com/（丰巢隐私政策）</a></td>
     </tr>
   </tbody>
 </table>
-
-<p>This list is updated periodically. If you have any questions about our third-party sharing practices, please contact us at <a href="mailto:shuduizhang@xiaohongshu.com">shuduizhang@xiaohongshu.com</a>.</p>
 
 </body>
 </html>
